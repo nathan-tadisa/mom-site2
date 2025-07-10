@@ -18,14 +18,22 @@ export const TestimonialsSection = (): JSX.Element => {
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <Button
             variant="outline"
-            className="h-12 px-6 rounded-md border border-solid border-black bg-transparent text-black font-normal text-lg"
+            className="h-12 px-6 rounded-md border border-solid border-black bg-transparent text-black font-normal text-lg hover:bg-black hover:text-white transition-colors"
+            onClick={() => {
+              const signUpSection = document.getElementById('sign-up-form');
+              signUpSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             Sign Up
           </Button>
 
           <Button
             variant="outline"
-            className="h-12 px-6 rounded-md border border-solid border-black bg-transparent text-black font-normal text-lg"
+            className="h-12 px-6 rounded-md border border-solid border-black bg-transparent text-black font-normal text-lg hover:bg-black hover:text-white transition-colors"
+            onClick={() => {
+              const overwhelmedSection = document.getElementById('why-it-matters');
+              overwhelmedSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             Learn More
           </Button>

@@ -25,6 +25,20 @@ export const UnlockWardrobePotentialSection = (): JSX.Element => {
       description:
         "Transform chaos into order with simple, effective organization techniques.",
     },
+    {
+      number: "03",
+      image: "/figmaAssets/image-1.png",
+      title: "Master the art of mixing and matching",
+      description:
+        "Create endless outfit combinations with fewer pieces by understanding color coordination and style compatibility.",
+    },
+    {
+      number: "04",
+      image: "/figmaAssets/image-1-1.png",
+      title: "Build a capsule wardrobe that works",
+      description:
+        "Invest in versatile, high-quality pieces that can be styled multiple ways for maximum impact and value.",
+    },
   ];
 
   return (

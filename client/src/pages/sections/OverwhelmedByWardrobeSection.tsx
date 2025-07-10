@@ -24,7 +24,7 @@ export const OverwhelmedByWardrobeSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col w-full py-16 px-[60px] gap-12">
+    <section id="why-it-matters" className="flex flex-col w-full py-16 px-[60px] gap-12">
       <h2 className="font-serif text-[54px] text-black font-normal tracking-normal leading-normal">
         Why does it matter?
       </h2>

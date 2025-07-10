@@ -87,7 +87,7 @@ export const WhyItMattersSection = (): JSX.Element => {
         </div>
 
         {/* Form and Image */}
-        <div className="flex flex-col md:flex-row justify-between px-[60px] py-8 gap-8">
+        <div id="sign-up-form" className="flex flex-col md:flex-row justify-between px-[60px] py-8 gap-8">
           <Card className="w-full md:w-[600px] border-none shadow-none">
             <CardContent className="p-0 space-y-[38px]">
               {/* Name and Surname row */}
