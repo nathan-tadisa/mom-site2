@@ -8,7 +8,7 @@ import { WhyItMattersSection } from "./sections/WhyItMattersSection";
 
 export const Desktop = (): JSX.Element => {
   return (
-    <div className="bg-[#fcf7f8] flex flex-col items-center w-full">
+    <div className="bg-[#fcf7f8] flex flex-col items-center w-full min-h-screen">
       <div className="bg-[#fcf7f8] w-full max-w-[1440px] relative">
         <TestimonialsSection />
         <FrequentlyAskedQuestionsSection />

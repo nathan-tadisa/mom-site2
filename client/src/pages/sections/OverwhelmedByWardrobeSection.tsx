@@ -24,14 +24,14 @@ export const OverwhelmedByWardrobeSection = (): JSX.Element => {
   ];
 
   return (
-    <section id="why-it-matters" className="flex flex-col w-full py-16 px-[60px] gap-12">
-      <h2 className="font-serif text-[54px] text-black font-normal tracking-normal leading-normal">
+    <section id="why-it-matters" className="flex flex-col w-full py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] gap-8 sm:gap-10 md:gap-12">
+      <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[54px] text-black font-normal tracking-normal leading-tight text-center lg:text-left">
         Why does it matter?
       </h2>
 
-      <div className="flex items-center justify-between gap-[108px] w-full">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 sm:gap-12 md:gap-16 lg:gap-[108px] w-full">
         {benefitCards.map((card, index) => (
-          <Card key={index} className="border-none shadow-none bg-transparent">
+          <Card key={index} className="border-none shadow-none bg-transparent w-full md:w-auto">
             <CardContent className="p-0 flex flex-col items-center">
               {card.imageContent ? (
                 <div className="relative w-[261px] h-[261px] mb-4">
@@ -270,7 +270,7 @@ export const OverwhelmedByWardrobeSection = (): JSX.Element => {
                 />
               )}
               <h3
-                className={`font-sans text-[30.7px] text-black font-normal tracking-normal leading-normal mt-4 ${card.isCentered ? "text-center w-[330px]" : ""}`}
+                className={`font-sans text-lg sm:text-xl md:text-2xl lg:text-[30.7px] text-black font-normal tracking-normal leading-normal mt-4 text-center ${card.isCentered ? "w-full sm:w-[280px] md:w-[330px]" : ""}`}
               >
                 {card.title}
               </h3>

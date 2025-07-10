@@ -42,42 +42,42 @@ export const UnlockWardrobePotentialSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col w-full items-start gap-[74px] px-[60px] py-0">
-      <h2 className="w-[621px] [font-family:'Literata',Helvetica] font-normal text-black text-[54px] tracking-[0] leading-normal">
-        Unlock Your Wardrobe&#39;s Potential
+    <section className="flex flex-col w-full items-start gap-8 sm:gap-12 md:gap-16 lg:gap-[74px] px-4 sm:px-6 md:px-8 lg:px-[60px] py-8 sm:py-12 md:py-16">
+      <h2 className="w-full max-w-[621px] [font-family:'Literata',Helvetica] font-normal text-black text-2xl sm:text-3xl md:text-4xl lg:text-[54px] tracking-[0] leading-tight">
+        Unlock Your Wardrobe's Potential
       </h2>
 
       <div className="w-full">
         <Carousel className="w-full" opts={{ align: "start", loop: true }}>
-          <CarouselContent className="-ml-4">
+          <CarouselContent className="-ml-2 sm:-ml-4">
             {wardrobeTips.map((tip, index) => (
-              <CarouselItem key={`tip-${index}`} className="pl-4 basis-auto">
-                <div className="flex items-start gap-[41px] min-w-fit">
+              <CarouselItem key={`tip-${index}`} className="pl-2 sm:pl-4 basis-full sm:basis-auto">
+                <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 md:gap-8 lg:gap-[41px] min-w-fit">
                   <img
-                    className="w-[276px] h-[349px] object-cover"
+                    className="w-full sm:w-[200px] md:w-[240px] lg:w-[276px] h-[250px] sm:h-[280px] md:h-[320px] lg:h-[349px] object-cover rounded-lg"
                     alt={`Wardrobe tip ${tip.number} image`}
                     src={tip.image}
                   />
 
                   <Card className="border-none shadow-none">
-                    <CardContent className="flex flex-col w-[446px] items-start gap-[29px] p-0">
-                      <div className="w-fit [font-family:'Inter',Helvetica] font-normal text-black text-[80.2px] text-center tracking-[0] leading-normal">
+                    <CardContent className="flex flex-col w-full sm:w-[300px] md:w-[380px] lg:w-[446px] items-start gap-4 sm:gap-5 md:gap-6 lg:gap-[29px] p-0">
+                      <div className="w-fit [font-family:'Inter',Helvetica] font-normal text-black text-4xl sm:text-5xl md:text-6xl lg:text-[80.2px] text-center tracking-[0] leading-normal">
                         {tip.number}
                       </div>
 
-                      <div className="relative w-[446px] h-[13px]">
-                        <div className="absolute w-[433px] h-[13px] top-0 left-0">
-                          <Separator className="absolute w-[422px] h-0.5 top-1.5 left-[11px] bg-black" />
+                      <div className="relative w-full sm:w-[300px] md:w-[380px] lg:w-[446px] h-[13px]">
+                        <div className="absolute w-[calc(100%-13px)] h-[13px] top-0 left-0">
+                          <Separator className="absolute w-[calc(100%-22px)] h-0.5 top-1.5 left-[11px] bg-black" />
                           <div className="absolute w-[13px] h-[13px] top-0 left-0 rounded-[6.5px] border-2 border-solid border-black" />
                         </div>
-                        <div className="absolute w-[13px] h-[13px] top-0 left-[433px] rounded-[6.5px] border-2 border-solid border-black" />
+                        <div className="absolute w-[13px] h-[13px] top-0 right-0 rounded-[6.5px] border-2 border-solid border-black" />
                       </div>
 
-                      <h3 className="w-[387px] [font-family:'Literata',Helvetica] font-normal text-black text-[31px] tracking-[0] leading-normal">
+                      <h3 className="w-full sm:w-[300px] md:w-[360px] lg:w-[387px] [font-family:'Literata',Helvetica] font-normal text-black text-lg sm:text-xl md:text-2xl lg:text-[31px] tracking-[0] leading-normal">
                         {tip.title}
                       </h3>
 
-                      <p className="w-[387px] h-14 [font-family:'Montserrat',Helvetica] font-normal text-black text-lg tracking-[0] leading-normal">
+                      <p className="w-full sm:w-[300px] md:w-[360px] lg:w-[387px] [font-family:'Montserrat',Helvetica] font-normal text-black text-sm sm:text-base md:text-lg tracking-[0] leading-normal">
                         {tip.description}
                       </p>
                     </CardContent>
@@ -86,8 +86,8 @@ export const UnlockWardrobePotentialSection = (): JSX.Element => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
+          <CarouselPrevious className="left-2 sm:left-4" />
+          <CarouselNext className="right-2 sm:right-4" />
         </Carousel>
       </div>
     </section>

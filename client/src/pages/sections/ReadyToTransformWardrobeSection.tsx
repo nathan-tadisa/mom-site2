@@ -60,13 +60,13 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full py-16 px-[60px] relative">
+    <section className="w-full py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] relative">
       {/* Testimonials Header */}
-      <div className="text-center mb-16">
-        <h2 className="[font-family:'Literata',Helvetica] font-normal text-black text-[54px] tracking-[0] leading-tight mb-6">
+      <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <h2 className="[font-family:'Literata',Helvetica] font-normal text-black text-2xl sm:text-3xl md:text-4xl lg:text-[54px] tracking-[0] leading-tight mb-4 sm:mb-6">
           What Our Students Say
         </h2>
-        <p className="[font-family:'Montserrat',Helvetica] font-normal text-black text-xl max-w-2xl mx-auto">
+        <p className="[font-family:'Montserrat',Helvetica] font-normal text-black text-base sm:text-lg md:text-xl max-w-2xl mx-auto px-4">
           Real transformations from women who took control of their style and confidence
         </p>
       </div>
@@ -85,10 +85,10 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
             {testimonials.map((testimonial) => (
               <CarouselItem key={testimonial.id}>
                 <Card className="border-none shadow-none bg-transparent">
-                  <CardContent className="p-8">
-                    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-[62px]">
+                  <CardContent className="p-4 sm:p-6 md:p-8">
+                    <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-[62px]">
                       <img
-                        className="w-[246px] h-[321px] object-cover rounded-lg flex-shrink-0"
+                        className="w-[200px] sm:w-[220px] md:w-[246px] h-[260px] sm:h-[290px] md:h-[321px] object-cover rounded-lg flex-shrink-0"
                         alt={`${testimonial.name} testimonial portrait`}
                         src={testimonial.image}
                       />
@@ -96,11 +96,11 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
                       {/* Vertical divider - hidden on mobile */}
                       <div className="hidden md:block w-0.5 h-[263.5px] bg-gray-300"></div>
                       
-                      <div className="flex flex-col items-start gap-8 max-w-[516px]">
-                        <blockquote className="[font-family:'Montserrat',Helvetica] font-normal text-black text-[22px] md:text-[25.9px] leading-relaxed">
+                      <div className="flex flex-col items-start gap-4 sm:gap-6 md:gap-8 max-w-full md:max-w-[516px] text-center md:text-left">
+                        <blockquote className="[font-family:'Montserrat',Helvetica] font-normal text-black text-base sm:text-lg md:text-[22px] lg:text-[25.9px] leading-relaxed">
                           {testimonial.quote}
                         </blockquote>
-                        <cite className="[font-family:'Montserrat',Helvetica] font-medium text-black text-[22px] md:text-[25.9px] leading-normal not-italic">
+                        <cite className="[font-family:'Montserrat',Helvetica] font-medium text-black text-base sm:text-lg md:text-[22px] lg:text-[25.9px] leading-normal not-italic">
                           — {testimonial.name}
                         </cite>
                       </div>
@@ -112,19 +112,19 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
           </CarouselContent>
           
           {/* Navigation Arrows */}
-          <CarouselPrevious className="left-4 md:left-0" />
-          <CarouselNext className="right-4 md:right-0" />
+          <CarouselPrevious className="left-2 sm:left-4 md:left-0" />
+          <CarouselNext className="right-2 sm:right-4 md:right-0" />
         </Carousel>
 
         {/* Enhanced Pagination */}
-        <div className="flex flex-col items-center mt-8 gap-4">
+        <div className="flex flex-col items-center mt-6 sm:mt-8 gap-3 sm:gap-4">
           {/* Dots indicator */}
           <div className="flex gap-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => api?.scrollTo(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                className={`w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full transition-all duration-200 ${
                   index === current - 1 
                     ? "bg-black scale-110" 
                     : "bg-gray-400 hover:bg-gray-600"
@@ -135,7 +135,7 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
           </div>
           
           {/* Current position indicator */}
-          <div className="text-sm [font-family:'Montserrat',Helvetica] text-gray-600">
+          <div className="text-xs sm:text-sm [font-family:'Montserrat',Helvetica] text-gray-600">
             {current} of {count}
           </div>
         </div>
