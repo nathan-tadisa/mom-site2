@@ -11,63 +11,51 @@ export const TestimonialsSection = (): JSX.Element => {
   // Hero images array with your uploaded photos
   const heroImages = [
     {
-      src: "/attached_assets/IMG-20250710-WA0035_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0038_1752414314417.jpg",
       alt: "Professional style consultation - elegant portrait"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0036_1752414107365.jpg",
-      alt: "Confident wardrobe styling - professional look"
-    },
-    {
-      src: "/attached_assets/IMG-20250710-WA0037_1752414107365.jpg",
-      alt: "Personal style transformation - modern fashion"
-    },
-    {
-      src: "/attached_assets/IMG-20250710-WA0038_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0039_1752414314417.jpg",
       alt: "Style confidence - elegant black and white portrait"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0039_1752414107365.jpg",
-      alt: "Professional wardrobe consultation - comfortable style"
-    },
-    {
-      src: "/attached_assets/IMG-20250710-WA0040_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0040_1752414314417.jpg",
       alt: "Confident styling - natural beauty portrait"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0041_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0041_1752414314417.jpg",
       alt: "Style transformation - green professional outfit"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0042_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0042_1752414314417.jpg",
       alt: "Wardrobe confidence - outdoor casual style"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0043_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0043_1752414314417.jpg",
       alt: "Personal style journey - elegant modern look"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0044_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0044_1752414314417.jpg",
       alt: "Professional styling - denim fashion confidence"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0045_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0045_1752414314417.jpg",
       alt: "Style consultation success - café setting"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0046_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0046_1752414314417.jpg",
       alt: "Confident fashion choices - sunglasses style"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0047_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0047_1752414314417.jpg",
       alt: "Wardrobe transformation - blue patterned outfit"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0048_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0048_1752414314417.jpg",
       alt: "Professional style - car interior portrait"
     },
     {
-      src: "/attached_assets/IMG-20250710-WA0049_1752414107365.jpg",
+      src: "/attached_assets/IMG-20250710-WA0049_1752414314417.jpg",
       alt: "Style confidence - professional braided hairstyle"
     }
   ];
@@ -124,11 +112,29 @@ export const TestimonialsSection = (): JSX.Element => {
       </div>
 
       <div className="mt-8 lg:mt-0 w-full lg:w-auto flex justify-center">
-        <img
-          className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:w-[741px] h-auto lg:h-[900px] object-cover"
-          alt="Fashion style collage"
-          src="/figmaAssets/frame-1.svg"
-        />
+        <Carousel 
+          setApi={setApi}
+          className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:w-[741px]"
+          opts={{
+            align: "center",
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {heroImages.map((image, index) => (
+              <CarouselItem key={index}>
+                <img
+                  className="w-full h-[300px] sm:h-[400px] md:h-[600px] lg:h-[900px] object-cover rounded-lg"
+                  alt={image.alt}
+                  src={image.src}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          
+          <CarouselPrevious className="left-2" />
+          <CarouselNext className="right-2" />
+        </Carousel>
       </div>
     </section>
   );

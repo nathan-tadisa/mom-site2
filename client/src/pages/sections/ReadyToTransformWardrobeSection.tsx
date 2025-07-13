@@ -34,28 +34,28 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
       quote:
         '"This wardrobe transformation course completely changed how I approach getting dressed. I went from spending 30 minutes each morning to having everything flow effortlessly."',
       name: "Sarah Chen, Marketing Director",
-      image: "/figmaAssets/rectangle-31.svg",
+      image: "/attached_assets/IMG-20250710-WA0045_1752414314417.jpg",
     },
     {
       id: 2,
       quote:
         '"I finally understand what works for my body type and lifestyle. The confidence I feel now radiates into every aspect of my life - both personal and professional."',
       name: "Maria Rodriguez, Teacher",
-      image: "/figmaAssets/rectangle-31.svg",
+      image: "/attached_assets/IMG-20250710-WA0041_1752414314417.jpg",
     },
     {
       id: 3,
       quote:
         '"The best investment I\'ve made in myself. I used to dread shopping, but now I know exactly what to look for and feel excited about building my wardrobe."',
       name: "Jennifer Williams, Entrepreneur",
-      image: "/figmaAssets/rectangle-31.svg",
+      image: "/attached_assets/IMG-20250710-WA0043_1752414314417.jpg",
     },
     {
       id: 4,
       quote:
         '"From chaos to clarity in just 6 weeks. My closet is now organized, and every piece works together. I feel put-together and confident every single day."',
       name: "Lisa Thompson, Consultant",
-      image: "/figmaAssets/rectangle-31.svg",
+      image: "/attached_assets/IMG-20250710-WA0047_1752414314417.jpg",
     },
   ];
 
