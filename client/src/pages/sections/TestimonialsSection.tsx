@@ -124,7 +124,7 @@ export const TestimonialsSection = (): JSX.Element => {
             {heroImages.map((image, index) => (
               <CarouselItem key={index}>
                 <img
-                  className="w-full h-[300px] sm:h-[400px] md:h-[600px] lg:h-[900px] object-cover rounded-lg"
+                  className="w-full h-[350px] sm:h-[450px] md:h-[650px] lg:h-[800px] object-cover rounded-lg shadow-lg"
                   alt={image.alt}
                   src={image.src}
                 />

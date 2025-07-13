@@ -88,7 +88,7 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
                   <CardContent className="p-4 sm:p-6 md:p-8">
                     <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-[62px]">
                       <img
-                        className="w-[200px] sm:w-[220px] md:w-[246px] h-[260px] sm:h-[290px] md:h-[321px] object-cover rounded-lg flex-shrink-0"
+                        className="w-[200px] sm:w-[220px] md:w-[246px] h-[200px] sm:h-[220px] md:h-[246px] object-cover rounded-full flex-shrink-0 shadow-md"
                         alt={`${testimonial.name} testimonial portrait`}
                         src={testimonial.image}
                       />

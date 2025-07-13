@@ -54,7 +54,7 @@ export const UnlockWardrobePotentialSection = (): JSX.Element => {
               <CarouselItem key={`tip-${index}`} className="pl-2 sm:pl-4 basis-full sm:basis-auto">
                 <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 md:gap-8 lg:gap-[41px] min-w-fit">
                   <img
-                    className="w-full sm:w-[200px] md:w-[240px] lg:w-[276px] h-[250px] sm:h-[280px] md:h-[320px] lg:h-[349px] object-cover rounded-lg"
+                    className="w-full sm:w-[200px] md:w-[240px] lg:w-[276px] h-[200px] sm:h-[200px] md:h-[240px] lg:h-[276px] object-cover rounded-lg shadow-md"
                     alt={`Wardrobe tip ${tip.number} image`}
                     src={tip.image}
                   />
