@@ -57,7 +57,7 @@ export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
               <img
                 className="w-full max-w-[400px] sm:max-w-[500px] lg:w-[580px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] object-cover rounded-lg shadow-lg"
                 alt="Wardrobe items"
-                src="/attached_assets/IMG-20250710-WA0049_1752414314417.jpg"
+                src="/figmaAssets/image-1-1.png"
               />
             </CardContent>
           </Card>

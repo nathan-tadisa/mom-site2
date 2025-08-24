@@ -32,30 +32,26 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
     {
       id: 1,
       quote:
-        '"This wardrobe transformation course completely changed how I approach getting dressed. I went from spending 30 minutes each morning to having everything flow effortlessly."',
-      name: "Sarah Chen, Marketing Director",
-      image: "/attached_assets/IMG-20250710-WA0045_1752414314417.jpg",
+        `"It started with an inner transformation - I began to feel good about myself, my worth, and my appearance. This newfound confidence inspired me to take care of my looks and discover my personal style! I learned what to wear, what colors and styles suited my body type, and how to own my look! The result? A complete demeanor overhaul! I've been helped to  uncover my true identity in style  and I'm forever grateful!"`,
+      name: "Nyasha, 27",
     },
     {
       id: 2,
       quote:
-        '"I finally understand what works for my body type and lifestyle. The confidence I feel now radiates into every aspect of my life - both personal and professional."',
-      name: "Maria Rodriguez, Teacher",
-      image: "/attached_assets/IMG-20250710-WA0041_1752414314417.jpg",
+        `"Before I took the Ultimate Wardrobe Management course, I didn't know my body had a shape and I had to dress it accordingly. I didn't know that I too could be stylish as I always thought that style was for a select few. Through what I learnt in the course I am enjoying the process of learning about my type and what works and doesn't work for my body type. I am not yet fully there but I am striving to build a wardrobe that works for me. I recommend the course a 100%, you won't regret it."`,
+      name: "Dr Nomutsa, 40yrs",
     },
     {
       id: 3,
       quote:
         '"The best investment I\'ve made in myself. I used to dread shopping, but now I know exactly what to look for and feel excited about building my wardrobe."',
       name: "Jennifer Williams, Entrepreneur",
-      image: "/attached_assets/IMG-20250710-WA0043_1752414314417.jpg",
     },
     {
       id: 4,
       quote:
         '"From chaos to clarity in just 6 weeks. My closet is now organized, and every piece works together. I feel put-together and confident every single day."',
       name: "Lisa Thompson, Consultant",
-      image: "/attached_assets/IMG-20250710-WA0047_1752414314417.jpg",
     },
   ];
 
@@ -86,20 +82,13 @@ export const ReadyToTransformWardrobeSection = (): JSX.Element => {
               <CarouselItem key={testimonial.id}>
                 <Card className="border-none shadow-none bg-transparent">
                   <CardContent className="p-4 sm:p-6 md:p-8">
-                    <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-[62px]">
-                      <img
-                        className="w-[200px] sm:w-[220px] md:w-[246px] h-[200px] sm:h-[220px] md:h-[246px] object-cover rounded-full flex-shrink-0 shadow-md"
-                        alt={`${testimonial.name} testimonial portrait`}
-                        src={testimonial.image}
-                      />
+                    <div className="flex flex-col md:flex-row items-center">
                       
-                      {/* Vertical divider - hidden on mobile */}
-                      <div className="hidden md:block w-0.5 h-[263.5px] bg-gray-300"></div>
-                      
-                      <div className="flex flex-col items-start gap-4 sm:gap-6 md:gap-8 max-w-full md:max-w-[516px] text-center md:text-left">
+                      <div className="text-center md:text-left p-6">
                         <blockquote className="[font-family:'Montserrat',Helvetica] font-normal text-black text-base sm:text-lg md:text-[22px] lg:text-[25.9px] leading-relaxed">
                           {testimonial.quote}
                         </blockquote>
+                        <br />
                         <cite className="[font-family:'Montserrat',Helvetica] font-medium text-black text-base sm:text-lg md:text-[22px] lg:text-[25.9px] leading-normal not-italic">
                           — {testimonial.name}
                         </cite>

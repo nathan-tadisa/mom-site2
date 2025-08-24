@@ -75,8 +75,8 @@ export const TestimonialsSection = (): JSX.Element => {
 
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between w-full px-4 sm:px-6 md:px-8 lg:px-[60px] py-8 sm:py-12 lg:py-16">
-      <div className="flex flex-col w-full lg:w-[546px] items-start gap-4 sm:gap-6 text-center lg:text-left">
-        <h2 className="font-serif font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[54px] text-black leading-tight">
+      <div className="flex flex-col w-full lg:w-[546px] gap-4 sm:gap-6 text-center lg:text-left">
+        <h2 className="font-serif font-semibold text-2xl sm:text-3xl sm:align-center md:align-center md:text-4xl lg:text-[54px] text-black leading-tight">
           Discover Your Confident Style
         </h2>
 
@@ -86,7 +86,7 @@ export const TestimonialsSection = (): JSX.Element => {
           your best self.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto sm:align-items-center md:align-items-center">
           <Button
             variant="outline"
             className="h-10 sm:h-12 px-4 sm:px-6 rounded-md border border-solid border-black bg-transparent text-black font-normal text-base sm:text-lg hover:bg-black hover:text-white transition-colors"
@@ -112,29 +112,7 @@ export const TestimonialsSection = (): JSX.Element => {
       </div>
 
       <div className="mt-8 lg:mt-0 w-full lg:w-auto flex justify-center">
-        <Carousel 
-          setApi={setApi}
-          className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:w-[741px]"
-          opts={{
-            align: "center",
-            loop: true,
-          }}
-        >
-          <CarouselContent>
-            {heroImages.map((image, index) => (
-              <CarouselItem key={index}>
-                <img
-                  className="w-full h-[350px] sm:h-[450px] md:h-[650px] lg:h-[800px] object-cover rounded-lg shadow-lg"
-                  alt={image.alt}
-                  src={image.src}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          
-          <CarouselPrevious className="left-2" />
-          <CarouselNext className="right-2" />
-        </Carousel>
+        <img src="figmaAssets/mom-1.jpg" className="max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:w-[741px]"/>
       </div>
     </section>
   );

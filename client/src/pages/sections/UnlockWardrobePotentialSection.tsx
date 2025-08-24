@@ -13,28 +13,28 @@ export const UnlockWardrobePotentialSection = (): JSX.Element => {
   const wardrobeTips = [
     {
       number: "01",
-      image: "/attached_assets/IMG-20250710-WA0044_1752414314417.jpg",
+      image: "/figmaAssets/lifestyle.jpg",
       title: "Align your wardrobe with your lifestyle.",
       description:
         "Learn to curate outfits that fit your daily routine, whether for work, play, or relaxation.",
     },
     {
       number: "02",
-      image: "/attached_assets/IMG-20250710-WA0046_1752414314417.jpg",
+      image: "/figmaAssets/organise.jpg",
       title: "Organize your closet for stress-free mornings",
       description:
         "Transform chaos into order with simple, effective organization techniques.",
     },
     {
       number: "03",
-      image: "/attached_assets/IMG-20250710-WA0048_1752414314417.jpg",
+      image: "/figmaAssets/master.jpg",
       title: "Master the art of mixing and matching",
       description:
         "Create endless outfit combinations with fewer pieces by understanding color coordination and style compatibility.",
     },
     {
       number: "04",
-      image: "/attached_assets/IMG-20250710-WA0042_1752414314417.jpg",
+      image: "/figmaAssets/capsule.jpg",
       title: "Build a capsule wardrobe that works",
       description:
         "Invest in versatile, high-quality pieces that can be styled multiple ways for maximum impact and value.",

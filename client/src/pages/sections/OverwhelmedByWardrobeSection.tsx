@@ -11,7 +11,7 @@ export const OverwhelmedByWardrobeSection = (): JSX.Element => {
       imageClassName: "w-[231px] h-[229px] mx-auto",
     },
     {
-      title: "Help you connect with others",
+      title: "Help you connect with others at the level that you want",
       imageSrc: "/figmaAssets/teenagers-in-circle.svg",
       imageAlt: "Teenagers in circle",
       imageClassName: "w-[257px] h-[257px] mx-auto",
